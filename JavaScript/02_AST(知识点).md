@@ -11,6 +11,6 @@
 7. Export : 导出模块，也属于一种特殊的声明，有三种类型 ExportAllDeclaration | ExportDefaultDeclaration | ExportNamedDeclaration。
 
 ## 每个 AST 节点都有自己的属性，但是它们也有一些公共的属性：
-- pos，AST 节点在代码字符串中索引的起始位置，配合 end 确定节点在代码字符串中的位置（用于唯一性判定）。
+- start，AST 节点在代码字符串中索引的起始位置，配合 end 确定节点在代码字符串中的位置（用于唯一性判定）。
 - end，AST 节点在代码字符串中索引的结束位置，配合 pos 确定节点在代码字符串中的位置（用于唯一性判定）。
-- kind，用来标记当前 AST 节点的类型，上面列举的节点类型都可以通过 ts.SyntaxKind 的定义来查看。
+- type，用来标记当前 AST 节点的类型，上面列举的节点类型都可以通过 ts.SyntaxKind 的定义来查看。
